@@ -1,0 +1,70 @@
+package bilo;
+import java.util.Scanner;
+public class Bilo {
+    public static void main(String[] args) {
+ Scanner input =new Scanner(System.in);
+ double weight,forfeit;
+ int choice ;
+System.out.println("enter your class ");
+System.out.println("1.for first class ");
+System.out.println("2.for busniss ");
+System.out.println("3.for economic ");
+choice=input.nextInt();
+
+    switch (choice)
+                  { case 1 :System.out.println("your bag's weight is.....kg?");
+                          weight=input.nextDouble();
+                          if (weight>30)
+                          { forfeit=(weight-30)*10;
+                     System.out.println("you must pay a forfeit for overweight " + forfeit +" $");
+                          } 
+                          else System.out.println("we gave you a good trip");
+                    
+                  case 2 :System.out.println("your bag's weight is.....kg?");
+                          weight=input.nextDouble();
+                          if (weight>25)
+                          { forfeit=(weight-25)*10;
+                     System.out.println("you must pay a forfeit for overweight " + forfeit +" $");
+                          } 
+                          else System.out.println("we gave you a good trip");
+                    
+                    case 3 :System.out.println("your bag's weight is.....kg?");
+                          weight=input.nextDouble();
+                          if (weight>20)
+                          { forfeit=(weight-20)*10;
+                     System.out.println("you must pay a forfeit for overweight " + forfeit +" $");
+                          } 
+                          else System.out.println("we gave you a good trip");
+                    
+                    default:System.out.println("invalid choice");
+                    
+                  }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+                 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ }                                           
+}
+    
+

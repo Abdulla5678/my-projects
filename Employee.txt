@@ -1,0 +1,69 @@
+package bilo;
+
+ class Embloyee {
+ int emb_id;
+  String ename,debart;
+ double salary,bonus;
+ boolean resident;
+
+    
+    public void print_emb_data()
+    {
+    System.out.println("id " + emb_id);
+    System.out.println("embloyee name " + ename);
+    System.out.println("debart " + debart);
+    System.out.println("resident " +resident );
+   System.out.println("salary " + salary);
+   System.out.println("bonus " + bonus);
+        
+    }
+    public Embloyee()
+    {
+    emb_id=100;
+   ename="no name";
+    salary=3000;
+    bonus=500;
+    debart="not assigned yet";
+    resident =true;
+    }
+    public Embloyee(int idno,String n)
+    {
+    emb_id=idno;
+    ename=n;
+    
+    }
+    public Embloyee(int idno,String n,boolean r)
+    {
+    //emb_id=idno;
+    //ename=n;
+        this(idno,n);
+    resident=r;
+    }
+         public Embloyee(int idno,String n,boolean r,double s,double b,String d)
+         {
+         this (idno,n,r);
+         salary=s;
+         bonus=b;
+         debart =d;
+         
+         
+         
+         }
+public void setsalary(double s)
+{
+salary =s;
+}
+
+public void setsalary(double s,double b)
+{
+    this.setsalary(s);
+    bonus=b;
+}
+
+
+
+
+
+
+    
+                       }
